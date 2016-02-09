@@ -1,4 +1,4 @@
-FROM node:0.12
+FROM node:latest
 MAINTAINER coders51 <dev@coders51.com>
 
 LABEL Description="Node 0.12 with ruby installed for sass"
