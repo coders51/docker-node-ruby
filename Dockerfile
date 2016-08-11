@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
 	openssh-server \
 	libyaml-dev \
 	libicu-dev \
+	rsync \
 	libmysqlclient-dev \
 && apt-get clean \
 && rm -rf /var/lib/apt/lists/*
@@ -25,4 +26,3 @@ RUN cd /tmp/ruby && curl --silent ftp://ftp.ruby-lang.org/pub/ruby/2.2/ruby-2.2.
 RUN cd /tmp/ruby/ruby-2.2.3 && ./configure --disable-install-rdoc && make install
 
 RUN gem install bundler sass
-
