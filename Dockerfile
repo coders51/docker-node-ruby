@@ -1,7 +1,7 @@
 FROM node:4.4
 MAINTAINER coders51 <dev@coders51.com>
 
-LABEL Description="Node 0.12 with ruby installed for sass"
+LABEL Description="Node 4.4 with ruby installed for sass"
 
 RUN apt-get update && apt-get install -y \
 	curl \
